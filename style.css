@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #081b29;
+  background: #000;
   color: #ededed;
 }
 
@@ -24,6 +24,8 @@ body {
   align-items: center;
   z-index: 100;
 }
+
+
 
 .logo {
     position: relative;
@@ -135,7 +137,7 @@ body {
 }
 
 .btn-box a:hover {
-    color: #00abf0;
+    color: #081b29;
 }
 
 .btn-box a:nth-child(2) {
@@ -144,7 +146,7 @@ body {
 }
 
 .btn-box a:nth-child(2):hover {
-  color: #081b29;
+  color: #56b7fc;
 }
 
 .btn-box a:nth-child(2)::before {
@@ -166,6 +168,19 @@ body {
 .btn-box a:hover::before {
   width: 100%;
 }
+
+.Ayushi-img img {
+    position: absolute;
+    top: 150px; ;
+    right: 230px;
+    width: 300px;
+    height: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(0, 174, 255, 0.7);
+    object-fit: cover;
+    /* overflow: hidden; */
+}
+
 
 .home-sci {
     position: absolute;
@@ -227,6 +242,53 @@ body {
     background: #081b29;
     opacity: 0.8;
 }
+
+/* .About-content {
+      background: #000; 
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    } */
+     .About-content h1 {
+  position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+    .About-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00abf0;
+}
+    
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      width: 90%;
+    }
+
+    .skill-box {
+      background: #00abf0;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px #00abf0, 0 0 40px #00abf0;
+    }
+  
+
 
 @keyframes showRight {
     100% {
