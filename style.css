@@ -243,29 +243,76 @@ body {
     opacity: 0.8;
 }
 
-/* .About-content {
-      background: #000; 
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    } */
-     .About-content h1 {
-  position: relative;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.2;
+.main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
-    .About-content h3 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #00abf0;
+hr {
+  width: 80px;
+  height: 4px;
+  border: none;
+  margin: 0 auto 40px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #ff6b6b, #5f27cd);
 }
-    
 
-    .skills-container {
+/* Grid layout for About */
+.main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+hr {
+  width: 80px;
+  height: 4px;
+  border: none;
+  margin: 0 auto 40px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #ff6b6b, #5f27cd);
+}
+
+/* Grid layout for About */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* heading left, content right */
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-heading h2 {
+  font-size: 2rem;
+  color: #ff6b6b;
+  text-align: left;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+/* Grid layout for Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* heading left, boxes right */
+  gap: 40px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.skills-heading h2 {
+  font-size: 2rem;
+  color: #5f27cd;
+  text-align: left;
+}
+
+.skills-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 20px;
@@ -273,21 +320,48 @@ body {
       width: 90%;
     }
 
-    .skill-box {
-      background: #00abf0;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-    }
+.skill-box {
+  background: linear-gradient(135deg, #ff6b6b, #5f27cd);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
 
-    .skill-box:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 0 20px #00abf0, 0 0 40px #00abf0;
-    }
-  
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #5f27cd, 0 0 40px #5f27cd;
+}
+
+/* Education & Hobbies Sections */
+.education, .hobbies {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.edu-content h3 {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+}
+
+.edu-content p {
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.hobbies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.hobbies li {
+  font-size: 1.1rem;
+  margin: 8px 0;
+  color: #ddd;
+}
 
 
 @keyframes showRight {
